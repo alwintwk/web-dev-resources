@@ -331,17 +331,36 @@
 
 ## Backend frameworks
 
-| Name | Description |
-|---|---|
-| [Hono](https://hono.dev/) | Small, fast web framework for any JS runtime. |
-| [Express](https://expressjs.com/) | Minimal, classic Node.js web framework. |
-| [Fastify](https://fastify.dev/) | Fast, low-overhead Node.js framework. |
-| [NestJS](https://nestjs.com/) | Structured, Angular-style Node.js framework. |
-| [Elysia](https://elysiajs.com/) | Ergonomic, type-safe framework for Bun. |
-| [Django](https://www.djangoproject.com/) | Batteries-included Python web framework. |
-| [FastAPI](https://fastapi.tiangolo.com/) | Modern, fast Python API framework. |
-| [Laravel](https://laravel.com/) | Expressive PHP web framework. |
-| [Ruby on Rails](https://rubyonrails.org/) | Full-stack Ruby web framework. |
+> Full-stack meta-frameworks like Next.js, Nuxt, and SvelteKit also run server code. See [Meta-frameworks](#meta-frameworks).
+
+| Name | Language | Description |
+|---|---|---|
+| [Hono](https://hono.dev/) | JS/TS | Small, fast web framework for any JS runtime. |
+| [Express](https://expressjs.com/) | JS/TS | Minimal, classic Node.js web framework. |
+| [Fastify](https://fastify.dev/) | JS/TS | Fast, low-overhead Node.js framework. |
+| [NestJS](https://nestjs.com/) | JS/TS | Structured, Angular-style Node.js framework. |
+| [Koa](https://koajs.com/) | JS/TS | Lightweight middleware framework by the Express team. |
+| [AdonisJS](https://adonisjs.com/) | JS/TS | Batteries-included TypeScript framework, Laravel-style. |
+| [Nitro](https://nitro.build/) | JS/TS | Universal server toolkit that powers Nuxt; deploy anywhere. |
+| [Elysia](https://elysiajs.com/) | JS/TS | Ergonomic, type-safe framework for Bun. |
+| [Encore](https://encore.dev/) | TS/Go | Backend framework with built-in infrastructure and tracing. |
+| [Django](https://www.djangoproject.com/) | Python | Batteries-included Python web framework. |
+| [FastAPI](https://fastapi.tiangolo.com/) | Python | Modern, fast Python API framework. |
+| [Flask](https://flask.palletsprojects.com/) | Python | Lightweight Python micro-framework. |
+| [Litestar](https://litestar.dev/) | Python | High-performance ASGI framework. |
+| [Gin](https://gin-gonic.com/) | Go | Fast HTTP web framework for Go. |
+| [Echo](https://echo.labstack.com/) | Go | Minimalist, extensible Go web framework. |
+| [Fiber](https://gofiber.io/) | Go | Express-inspired Go framework. |
+| [Axum](https://github.com/tokio-rs/axum) | Rust | Ergonomic, modular framework built on Tokio. |
+| [Actix Web](https://actix.rs/) | Rust | Powerful, very fast Rust web framework. |
+| [Spring Boot](https://spring.io/projects/spring-boot) | Java/Kotlin | Production-ready Java apps with minimal config. |
+| [Quarkus](https://quarkus.io/) | Java | Cloud-native, fast-startup Java framework. |
+| [Ktor](https://ktor.io/) | Kotlin | Asynchronous Kotlin server framework by JetBrains. |
+| [ASP.NET Core](https://dotnet.microsoft.com/apps/aspnet) | C# | Cross-platform .NET web framework. |
+| [Laravel](https://laravel.com/) | PHP | Expressive PHP web framework. |
+| [Symfony](https://symfony.com/) | PHP | Reusable PHP components and framework. |
+| [Ruby on Rails](https://rubyonrails.org/) | Ruby | Full-stack Ruby web framework. |
+| [Phoenix](https://www.phoenixframework.org/) | Elixir | Real-time web framework with LiveView. |
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
