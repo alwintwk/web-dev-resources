@@ -1,6 +1,6 @@
 <h1 align="center">Web development resources</h1>
 <p align="center"><i>A curated list of open source frameworks, tools, and resources for modern web development.</i></p>
-<p align="center">Inspired by <a href="https://github.com/milanaryal/web-development-resources">milanaryal/web-development-resources</a>. Last reviewed: September 2026.<br />New to the terms? See the companion glossary <a href="https://github.com/alwintwk/dev-knowledge">dev-knowledge</a>.</p>
+<p align="center">Inspired by <a href="https://github.com/milanaryal/web-development-resources">milanaryal/web-development-resources</a>. Last reviewed: September 2026.<br />New to the terms? See the companion glossary <a href="https://github.com/alwintwk/dev-knowledge">dev-knowledge</a>.<br /><a href="https://alwintwk.github.io/web-dev-resources/">Search it online</a></p>
 
 ## Table of contents
 
