@@ -481,7 +481,7 @@
 |---|---|
 | [TypeScript](https://www.typescriptlang.org/) | JavaScript with static types. |
 | [TC39 proposals](https://github.com/tc39/proposals) | Track upcoming JavaScript features. |
-| [tsx](https://tsx.is/) | Run TypeScript files directly in Node.js. |
+| [tsx](https://github.com/privatenumber/tsx) | Run TypeScript files directly in Node.js. |
 | [SWC](https://swc.rs/) | Rust-based JS/TS compiler. |
 | [Babel](https://babeljs.io/) | JavaScript compiler for next-gen syntax. |
 | [Effect](https://effect.website/) | TypeScript library for typed errors, concurrency, and more. |
