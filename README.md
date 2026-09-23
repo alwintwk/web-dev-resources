@@ -1,6 +1,6 @@
 <h1 align="center">Web development resources</h1>
 <p align="center"><i>A curated list of open source frameworks, tools, and resources for modern web development.</i></p>
-<p align="center">Inspired by <a href="https://github.com/milanaryal/web-development-resources">milanaryal/web-development-resources</a>. Last reviewed: September 2026.</p>
+<p align="center">Inspired by <a href="https://github.com/milanaryal/web-development-resources">milanaryal/web-development-resources</a>. Last reviewed: September 2026.<br />New to the terms? See the companion glossary <a href="https://github.com/alwintwk/dev-knowledge">dev-knowledge</a>.</p>
 
 ## Table of contents
 
@@ -93,6 +93,8 @@
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
 ## Meta-frameworks
+
+> Concepts behind this: [dev-knowledge → CSR vs SSR vs SSG](https://github.com/alwintwk/dev-knowledge#csr-vs-ssr-vs-ssg)
 
 | Name | Works with | Description |
 |---|---|---|
@@ -400,6 +402,8 @@
 
 ## Accessibility
 
+> Concepts behind this: [dev-knowledge → Frontend concepts](https://github.com/alwintwk/dev-knowledge#frontend-concepts)
+
 | Name | Description |
 |---|---|
 | [ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/) | How to build accessible widgets, with examples. |
@@ -449,6 +453,8 @@
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
 ## Build tools & bundlers
+
+> Concepts behind this: [dev-knowledge → Frontend concepts (bundler, tree shaking)](https://github.com/alwintwk/dev-knowledge#frontend-concepts)
 
 | Name | Description |
 |---|---|
@@ -514,6 +520,8 @@
 
 ## Testing
 
+> Concepts behind this: [dev-knowledge → Testing](https://github.com/alwintwk/dev-knowledge#testing)
+
 | Name | Description |
 |---|---|
 | [Vitest](https://vitest.dev/) | Vite-native unit test framework. |
@@ -536,6 +544,8 @@
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
 ## Backend frameworks
+
+> Concepts behind this: [dev-knowledge → Backend & APIs](https://github.com/alwintwk/dev-knowledge#backend--apis)
 
 > Full-stack meta-frameworks like Next.js, Nuxt, and SvelteKit also run server code. See [Meta-frameworks](#meta-frameworks).
 
@@ -572,6 +582,8 @@
 
 ## APIs, RPC & realtime
 
+> Concepts behind this: [dev-knowledge → Backend & APIs](https://github.com/alwintwk/dev-knowledge#backend--apis)
+
 | Name | Description |
 |---|---|
 | [tRPC](https://trpc.io/) | End-to-end type-safe APIs without schemas. |
@@ -598,6 +610,8 @@
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
 ## Databases, ORMs & search
+
+> Concepts behind this: [dev-knowledge → Databases](https://github.com/alwintwk/dev-knowledge#databases)
 
 | Name | Description |
 |---|---|
@@ -628,6 +642,8 @@
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
 ## Auth
+
+> Concepts behind this: [dev-knowledge → Auth & identity (SSO, OAuth, JWT)](https://github.com/alwintwk/dev-knowledge#auth--identity)
 
 | Name | Description |
 |---|---|
@@ -667,6 +683,8 @@
 
 ## Hosting & deployment
 
+> Concepts behind this: [dev-knowledge → DevOps & cloud](https://github.com/alwintwk/dev-knowledge#devops--cloud)
+
 | Name | Description |
 |---|---|
 | [Docker](https://www.docker.com/) | Package apps into containers. |
@@ -699,6 +717,8 @@
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
 ## Analytics & monitoring
+
+> Concepts behind this: [dev-knowledge → Observability](https://github.com/alwintwk/dev-knowledge#observability--reliability)
 
 | Name | Description |
 |---|---|
@@ -762,6 +782,8 @@
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
 ## Performance & browser support
+
+> Concepts behind this: [dev-knowledge → Performance](https://github.com/alwintwk/dev-knowledge#performance)
 
 | Name | Description |
 |---|---|
@@ -843,3 +865,7 @@
 ## Contributing
 
 PRs welcome. Keep entries open source or free, one line each, most popular first within a section.
+
+## License
+
+[CC0 1.0](LICENSE): public domain. Copy, share, and reuse freely.
