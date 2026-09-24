@@ -1,47 +1,17 @@
 <h1 align="center">Web development resources</h1>
 <p align="center"><i>A curated list of open source frameworks, tools, and resources for modern web development.</i></p>
-<p align="center">Inspired by <a href="https://github.com/milanaryal/web-development-resources">milanaryal/web-development-resources</a>. Last reviewed: September 2026.<br />New to the terms? See the companion glossary <a href="https://github.com/alwintwk/dev-knowledge">dev-knowledge</a>.<br /><a href="https://alwintwk.github.io/web-dev-resources/">Search it online</a></p>
+<p align="center"><img src="https://img.shields.io/badge/license-CC0-blue" alt="License: CC0" /> <a href="https://github.com/alwintwk/web-dev-resources/actions/workflows/links.yml"><img src="https://github.com/alwintwk/web-dev-resources/actions/workflows/links.yml/badge.svg" alt="Link check" /></a> <a href="https://alwintwk.github.io/web-dev-resources/"><img src="https://img.shields.io/badge/search-online-2ea44f" alt="Search the list online" /></a></p>
+<p align="center"><b>How to use this list:</b> ⭐ = best place to start · <b>Best for</b> = when you'd choose it.<br />New project? Start with <a href="#starter-stacks">Starter stacks</a> or <a href="#which-should-i-pick">Which should I pick?</a></p>
+<p align="center">Inspired by <a href="https://github.com/milanaryal/web-development-resources">milanaryal/web-development-resources</a>. Last reviewed: September 2026.<br />New to the terms? See the companion glossary <a href="https://github.com/alwintwk/dev-knowledge">dev-knowledge</a>.</p>
 
 ## Table of contents
 
-* [Which should I pick?](#which-should-i-pick)
-* [Learning & references](#learning--references)
-* [UI frameworks](#ui-frameworks)
-* [Meta-frameworks](#meta-frameworks)
-* [Static sites & docs](#static-sites--docs)
-* [Headless CMS](#headless-cms)
-* [CSS frameworks & styling](#css-frameworks--styling)
-* [Component libraries](#component-libraries)
-* [Headless / unstyled components](#headless--unstyled-components)
-* [State & data fetching](#state--data-fetching)
-* [Forms & validation](#forms--validation)
-* [Routing](#routing)
-* [Animation](#animation)
-* [3D, canvas & graphics](#3d-canvas--graphics)
-* [Charts, maps & diagrams](#charts-maps--diagrams)
-* [Icons](#icons)
-* [Fonts & typography](#fonts--typography)
-* [Accessibility](#accessibility)
-* [Runtimes & version managers](#runtimes--version-managers)
-* [Package managers & monorepos](#package-managers--monorepos)
-* [Build tools & bundlers](#build-tools--bundlers)
-* [Languages & compilers](#languages--compilers)
-* [Linting & formatting](#linting--formatting)
-* [Testing](#testing)
-* [Backend frameworks](#backend-frameworks)
-* [APIs, RPC & realtime](#apis-rpc--realtime)
-* [Databases, ORMs & search](#databases-orms--search)
-* [Auth](#auth)
-* [Backend as a service](#backend-as-a-service)
-* [Hosting & deployment](#hosting--deployment)
-* [CDNs](#cdns)
-* [Analytics & monitoring](#analytics--monitoring)
-* [Mobile & desktop](#mobile--desktop)
-* [Images & media](#images--media)
-* [Performance & browser support](#performance--browser-support)
-* [Placeholders & mock data](#placeholders--mock-data)
-* [SEO, favicons & meta](#seo-favicons--meta)
-* [Lists of lists](#lists-of-lists)
+- **Start:** [Which should I pick?](#which-should-i-pick) · [Starter stacks](#starter-stacks) · [Learning & references](#learning--references)
+- **Frontend:** [UI frameworks](#ui-frameworks) · [Meta-frameworks](#meta-frameworks) · [Static sites & docs](#static-sites--docs) · [CSS frameworks & styling](#css-frameworks--styling) · [Component libraries](#component-libraries) · [Headless / unstyled components](#headless--unstyled-components) · [State & data fetching](#state--data-fetching) · [Forms & validation](#forms--validation) · [Routing](#routing) · [Animation](#animation) · [3D, canvas & graphics](#3d-canvas--graphics) · [Charts, maps & diagrams](#charts-maps--diagrams) · [Icons](#icons) · [Fonts & typography](#fonts--typography) · [Accessibility](#accessibility)
+- **Backend:** [Backend frameworks](#backend-frameworks) · [APIs, RPC & realtime](#apis-rpc--realtime) · [Databases, ORMs & search](#databases-orms--search) · [Auth](#auth) · [Backend as a service](#backend-as-a-service) · [Headless CMS](#headless-cms)
+- **Tooling:** [Runtimes & version managers](#runtimes--version-managers) · [Package managers & monorepos](#package-managers--monorepos) · [Build tools & bundlers](#build-tools--bundlers) · [Languages & compilers](#languages--compilers) · [Linting & formatting](#linting--formatting) · [Testing](#testing)
+- **Shipping:** [Hosting & deployment](#hosting--deployment) · [CDNs](#cdns) · [Analytics & monitoring](#analytics--monitoring) · [Performance & browser support](#performance--browser-support) · [SEO, favicons & meta](#seo-favicons--meta)
+- **Extras:** [Mobile & desktop](#mobile--desktop) · [Images & media](#images--media) · [Placeholders & mock data](#placeholders--mock-data) · [Lists of lists](#lists-of-lists) · [Contributing](#contributing) · [License](#license)
 
 ---
 
@@ -185,6 +155,87 @@ See all options: [Backend frameworks](#backend-frameworks).
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
+## Starter stacks
+
+Each stack is one set of tools that work well together, taken from the ⭐ picks and guide verdicts above. Use it as a starting point; every pick links to its section so you can compare alternatives.
+
+### Blog or portfolio
+
+For anyone who wants a personal site or blog that is mostly text and images and loads fast.
+
+| Layer | Pick | Why |
+|---|---|---|
+| Framework | [Astro](#meta-frameworks) | Pages are mostly HTML and Markdown, and almost no JavaScript is sent. |
+| Styling | [Tailwind CSS](#css-frameworks--styling) | Consistent styling without writing a large stylesheet. |
+| Content | [Keystatic](#headless-cms) | Edit posts in a web page; they stay as Markdown files in your repo. |
+| Fonts | [Google Fonts](#fonts--typography) | A free custom font in one line. |
+| Analytics | [Plausible](#analytics--monitoring) | Simple visitor counts with no cookie banner. |
+| Hosting | [Vercel](#hosting--deployment) | Free tier; a new deploy on every git push. |
+
+Swap Astro for Starlight if the site is mainly documentation.
+
+### Full-stack web app
+
+For anyone building an app with user accounts, a database, and pages that differ per user.
+
+| Layer | Pick | Why |
+|---|---|---|
+| Framework | [Next.js](#meta-frameworks) | The default React meta-framework; pages, routing, and server code in one project. |
+| Styling | [Tailwind CSS](#css-frameworks--styling) | Fast, consistent styling in your markup. |
+| Components | [shadcn/ui](#component-libraries) | Ready-made components you copy in and fully own. |
+| Database & ORM | [PostgreSQL](#databases-orms--search) + [Prisma](#databases-orms--search) | A reliable database plus the gentlest ORM to start with. |
+| Auth | [Better Auth](#auth) | Logins, sessions, and social sign-in without writing them yourself. |
+| Hosting | [Railway](#hosting--deployment) | Runs the app and its database together in a few clicks. |
+
+Swap Next.js for Nuxt or SvelteKit if you prefer Vue or Svelte.
+
+### API or backend only
+
+For anyone building a server that web or mobile apps call, with no pages of its own.
+
+| Layer | Pick | Why |
+|---|---|---|
+| Framework | [Express](#backend-frameworks) | The simplest Node.js start; most tutorials use it. |
+| Language | [TypeScript](#languages--compilers) | Catches many bugs before the code runs. |
+| Validation | [Zod](#forms--validation) | Checks incoming request data against a schema. |
+| Database & ORM | [PostgreSQL](#databases-orms--search) + [Prisma](#databases-orms--search) | A reliable database plus the gentlest ORM to start with. |
+| Auth | [Better Auth](#auth) | Handles logins and sessions for any TypeScript server. |
+| Hosting | [Railway](#hosting--deployment) | Runs the API and its database together. |
+
+Swap Express for FastAPI if you would rather write Python.
+
+### Mobile app
+
+For anyone who knows some React and wants a real app on iOS and Android.
+
+| Layer | Pick | Why |
+|---|---|---|
+| Framework | [Expo](#mobile--desktop) | The fastest path from React to a working iOS/Android app. |
+| Screens | [Expo Router](#routing) | File-based screens, the same idea as web routing. |
+| Styling | [NativeWind](#mobile--desktop) | Write Tailwind classes in React Native. |
+| Backend | [Supabase](#backend-as-a-service) | Database, logins, and file storage without your own server. |
+| Data fetching | [TanStack Query](#state--data-fetching) | Caches server data and handles loading and error states. |
+| Crash reports | [Sentry](#analytics--monitoring) | Tells you when the app crashes on someone's phone. |
+
+Swap Expo for Flutter if you do not know React and are starting mobile from scratch.
+
+### Internal tool or dashboard
+
+For teams building an admin panel or dashboard for staff, where building fast matters more than a custom look.
+
+| Layer | Pick | Why |
+|---|---|---|
+| Framework | [Vite](#build-tools--bundlers) + [React](#ui-frameworks) | No SEO needed, so a plain single-page app is enough. |
+| Components | [Mantine](#component-libraries) | A large set of ready-made components for forms, tables, and dialogs. |
+| Tables | [TanStack Table](#headless--unstyled-components) | Sorting, filtering, and paging for big data tables. |
+| Charts | [Chart.js](#charts-maps--diagrams) | The simplest way to draw common charts. |
+| Data fetching | [TanStack Query](#state--data-fetching) | Caches server data and keeps it fresh. |
+| Backend | [Supabase](#backend-as-a-service) | Database, logins, and row-level security in one service. |
+
+Swap Mantine for shadcn/ui if you want to restyle every component yourself.
+
+<p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
+
 ## Learning & references
 
 This is the shelf of places to actually learn web development, from thirty-second syntax lookups to full multi-month courses. Some are references you dip into like a dictionary; others are structured paths you follow start to finish. Reach for these when you need to learn a new concept or double-check how something works — not when you're picking a tool to build with.
@@ -198,6 +249,12 @@ This is the shelf of places to actually learn web development, from thirty-secon
 | [javascript.info](https://javascript.info/) | Learning JavaScript step by step, beginner to advanced. |
 | [Eloquent JavaScript](https://eloquentjavascript.net/) | A free, thorough intro book if you like reading over videos. |
 | [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS) | Understanding JS internals (closures, prototypes) once basics click. |
+
+<details>
+<summary>Show all 17 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [The Odin Project](https://www.theodinproject.com/) | A free structured path from zero to full-stack projects. |
 | [Full Stack Open](https://fullstackopen.com/en/) | A free university-grade course covering React, Node, GraphQL. |
 | [freeCodeCamp](https://www.freecodecamp.org/) | Interactive lessons plus certificates for structured self-study. |
@@ -210,6 +267,8 @@ This is the shelf of places to actually learn web development, from thirty-secon
 | [Smashing Magazine](https://www.smashingmagazine.com/) | Longer-form articles on design and dev practice. |
 | [Web Almanac](https://almanac.httparchive.org/) | Data-backed snapshot of how the web is really built. |
 | [W3C standards](https://www.w3.org/standards/) | Checking the actual spec behind a web feature. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -226,6 +285,12 @@ A UI framework is what you use to build the interactive parts of a website — b
 | [Svelte](https://svelte.dev/) | Less boilerplate; compiles away the framework at build time. |
 | [Angular](https://angular.dev/) | Large enterprise apps that want structure and conventions built in. |
 | [Solid](https://www.solidjs.com/) | React-like syntax with faster, fine-grained reactivity. |
+
+<details>
+<summary>Show all 17 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [Preact](https://preactjs.com/) | A React swap-in when bundle size really matters. |
 | [Qwik](https://qwik.dev/) | Very large sites needing near-instant first load. |
 | [Lit](https://lit.dev/) | Building reusable Web Components that work anywhere. |
@@ -238,6 +303,8 @@ A UI framework is what you use to build the interactive parts of a website — b
 | [Hotwire](https://hotwired.dev/) | Rails-style apps sending HTML over the wire instead of JSON. |
 | [Datastar](https://data-star.dev/) | Combining backend-driven HTML with client-side signals. |
 | [Leptos](https://leptos.dev/) | Building a full-stack UI in Rust instead of JS. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -256,6 +323,12 @@ A meta-framework wraps a UI framework (like React or Vue) with the extra plumbin
 | ⭐ [SvelteKit](https://svelte.dev/docs/kit) | Svelte | Default (and official) choice for full-stack Svelte apps. |
 | [React Router (framework mode)](https://reactrouter.com/) | React | Already using React Router; want a lighter full-stack option. |
 | [TanStack Start](https://tanstack.com/start) | React, Solid | Type-safe routing fans already using TanStack tools. |
+
+<details>
+<summary>Show all 15 tools</summary>
+
+| Name | Works with | Best for |
+|---|---|---|
 | [Waku](https://waku.gg/) | React | A minimal React server-components setup without extra framework weight. |
 | [Vike](https://vike.dev/) | React, Vue, Solid | Wanting full control over your own Vite-based stack. |
 | [Gatsby](https://www.gatsbyjs.com/) | React | Content-heavy static React sites with a plugin data layer. |
@@ -266,6 +339,8 @@ A meta-framework wraps a UI framework (like React or Vue) with the extra plumbin
 | [Wasp](https://wasp.sh/) | React + Node | Fast full-stack prototypes with auth and DB wired in already. |
 | [Inertia.js](https://inertiajs.com/) | React, Vue, Svelte | Server-rendered apps (Laravel/Rails) that want an SPA feel. |
 | [Livewire](https://livewire.laravel.com/) | Laravel | Laravel apps that want dynamic UI without writing JS. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -282,6 +357,12 @@ A static site generator turns your content (Markdown files, templates) into plai
 | [Hugo](https://gohugo.io/) | Very large sites where build speed matters most. |
 | [Jekyll](https://jekyllrb.com/) | GitHub Pages-native blogs; simple Ruby-based setup. |
 | [Zola](https://www.getzola.org/) | A single binary, no dependencies to install; fast Rust-based builds. |
+
+<details>
+<summary>Show all 12 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [Hexo](https://hexo.io/) | Node-based blogging with a large theme ecosystem. |
 | [VitePress](https://vitepress.dev/) | Vue-flavored docs sites with fast Vite-powered builds. |
 | [Docusaurus](https://docusaurus.io/) | React-based docs sites, especially versioned OSS project docs. |
@@ -289,6 +370,8 @@ A static site generator turns your content (Markdown files, templates) into plai
 | [Fumadocs](https://fumadocs.dev/) | Highly customizable docs sites built on Next.js. |
 | [Rspress](https://rspress.rs/) | Fast docs builds using the Rspack/Rsbuild toolchain. |
 | [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) | Python projects wanting a polished Material Design docs theme. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -305,9 +388,17 @@ A headless CMS is a content-editing backend — where non-developers write and u
 | [Directus](https://directus.io/) | Turning an existing SQL database into an instant API/admin. |
 | [Keystatic](https://keystatic.com/) | Storing content as Markdown/JSON files in your own repo. |
 | [TinaCMS](https://tina.io/) | Git-backed content with a visual, in-context editor. |
+
+<details>
+<summary>Show all 8 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [Decap CMS](https://decapcms.org/) | Free Git-based CMS for static sites (ex-Netlify CMS). |
 | [Ghost](https://ghost.org/) | A dedicated blog/newsletter platform, not a general CMS. |
 | [WordPress](https://wordpress.org/) | Reusing WordPress's huge plugin ecosystem headlessly via REST. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -324,6 +415,12 @@ This category covers everything that saves you from writing every visual style b
 | [Bulma](https://bulma.io/) | Flexbox-based classes without needing JavaScript components. |
 | [Foundation](https://get.foundation/) | Responsive layouts across sites and HTML emails. |
 | [UIkit](https://getuikit.com/) | A lighter, modular alternative to Bootstrap-style frameworks. |
+
+<details>
+<summary>Show all 21 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [UnoCSS](https://unocss.dev/) | Tailwind-like utilities generated on-demand for smaller output. |
 | [Pico CSS](https://picocss.com/) | Making plain semantic HTML look decent with zero classes. |
 | [Simple.css](https://simplecss.org/) | Classless CSS for quick, presentable prototypes and demos. |
@@ -341,6 +438,8 @@ This category covers everything that saves you from writing every visual style b
 | [Lightning CSS](https://lightningcss.dev/) | Very fast parsing/minifying, often used inside other tools. |
 | [Modern Normalize](https://github.com/sindresorhus/modern-normalize) | Resetting inconsistent browser default styles before you start. |
 
+</details>
+
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
 ## Component libraries
@@ -356,6 +455,12 @@ A component library gives you pre-built, already-styled UI pieces — buttons, m
 | ⭐ [Angular Material](https://material.angular.dev/) | Angular | Default, official-feeling choice for Angular apps. |
 | [HeroUI](https://www.heroui.com/) | React | Tailwind-based components with a polished look, minimal setup. |
 | [MUI](https://mui.com/) | React | Apps that want Material Design out of the box. |
+
+<details>
+<summary>Show all 26 tools</summary>
+
+| Name | Works with | Best for |
+|---|---|---|
 | [Mantine](https://mantine.dev/) | React | A large batteries-included set of React components and hooks. |
 | [Chakra UI](https://chakra-ui.com/) | React | Accessible-by-default components with a simple styling API. |
 | [Ant Design](https://ant.design/) | React | Enterprise/admin dashboards with a dense, ready-made component set. |
@@ -378,6 +483,8 @@ A component library gives you pre-built, already-styled UI pieces — buttons, m
 | [Preline UI](https://preline.co/) | Any (Tailwind) | Tailwind components and copy-paste examples. |
 | [Web Awesome](https://webawesome.com/) | Any | Framework-agnostic components as plain Web Components. |
 
+</details>
+
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
 ## Headless / unstyled components
@@ -393,6 +500,12 @@ Headless (unstyled) components give you the tricky behavior of a UI widget — k
 | [Base UI](https://base-ui.com/) | React | A newer unstyled React set from the Radix/MUI/Floating UI teams. |
 | [React Aria](https://react-spectrum.adobe.com/react-aria/) | React | Maximum accessibility rigor, backed by Adobe's a11y research. |
 | [Headless UI](https://headlessui.com/) | React, Vue | Simple unstyled components made to pair with Tailwind. |
+
+<details>
+<summary>Show all 16 tools</summary>
+
+| Name | Works with | Best for |
+|---|---|---|
 | [Ark UI](https://ark-ui.com/) | React, Vue, Solid, Svelte | One state-machine-driven component API across several frameworks. |
 | [Zag](https://zagjs.com/) | Any | Framework-agnostic state machines to build your own component libs. |
 | [Bits UI](https://bits-ui.com/) | Svelte | Unstyled, accessible components built for Svelte. |
@@ -404,6 +517,8 @@ Headless (unstyled) components give you the tricky behavior of a UI widget — k
 | [cmdk](https://cmdk.paco.me/) | React | Building a fast command-palette (⌘K) menu. |
 | [Sonner](https://sonner.emilkowal.ski/) | React | Drop-in, nicely animated toast notifications for React. |
 | [Downshift](https://github.com/downshift-js/downshift) | React | Building accessible autocomplete/combobox/select inputs from scratch. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -420,6 +535,12 @@ State management tools hold onto data your app needs to remember; data-fetching 
 | [TanStack DB](https://tanstack.com/db) | Any | Sync-first apps that need a local reactive data store. |
 | [SWR](https://swr.vercel.app/) | React | A lighter React-only alternative to TanStack Query. |
 | [Apollo Client](https://www.apollographql.com/docs/react) | React | GraphQL APIs that want a full-featured client with caching. |
+
+<details>
+<summary>Show all 17 tools</summary>
+
+| Name | Works with | Best for |
+|---|---|---|
 | [urql](https://github.com/urql-graphql/urql) | React, Vue, Svelte | A lighter, more extensible GraphQL client. |
 | [Jotai](https://jotai.org/) | React | Small pieces of state you compose bottom-up (atoms). |
 | [Valtio](https://valtio.dev/) | React | State that feels like plain mutable objects, via proxies. |
@@ -432,6 +553,8 @@ State management tools hold onto data your app needs to remember; data-fetching 
 | [Preact Signals](https://github.com/preactjs/signals) | Preact, React | Fine-grained reactive values usable in Preact or React. |
 | [Nano Stores](https://github.com/nanostores/nanostores) | Any | A tiny state manager for use across frameworks. |
 | [nuqs](https://nuqs.dev/) | React | Storing UI state directly in the URL query string. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -448,6 +571,12 @@ Forms look simple until you handle every edge case yourself: required fields, as
 | [TanStack Form](https://tanstack.com/form) | React, Vue, Solid, Svelte, Angular | Type-safe form state shared across React, Vue, Solid, and more. |
 | [Conform](https://conform.guide/) | React | Forms built around server actions and progressive enhancement. |
 | [Formik](https://formik.org/) | React | An older, still-common React form library many codebases already use. |
+
+<details>
+<summary>Show all 12 tools</summary>
+
+| Name | Works with | Best for |
+|---|---|---|
 | [VeeValidate](https://vee-validate.logaretm.com/) | Vue | Form validation for Vue apps. |
 | [FormKit](https://formkit.com/) | Vue | A fuller Vue form framework with inputs and schema built in. |
 | [Superforms](https://superforms.rocks/) | SvelteKit | Server- and client-validated forms in SvelteKit. |
@@ -455,6 +584,8 @@ Forms look simple until you handle every edge case yourself: required fields, as
 | [ArkType](https://arktype.io/) | Any | Validation that mirrors TypeScript types almost 1:1. |
 | [Yup](https://github.com/jquense/yup) | Any | An older, widely-used schema validator, often paired with Formik. |
 | [Standard Schema](https://standardschema.dev/) | Any | A shared interface so Zod/Valibot/ArkType tools interoperate. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -471,8 +602,16 @@ Routing is what decides which screen or page a user sees based on the URL in the
 | [TanStack Router](https://tanstack.com/router) | React, Solid | Type-safe routing; catches route bugs at compile time. |
 | [Wouter](https://github.com/molefrog/wouter) | React, Preact | Tiny router for small apps that want less code. |
 | [Solid Router](https://github.com/solidjs/solid-router) | Solid | Official router for Solid apps. |
+
+<details>
+<summary>Show all 7 tools</summary>
+
+| Name | Works with | Best for |
+|---|---|---|
 | [Angular Router](https://angular.dev/guide/routing) | Angular | Built into Angular; no separate install needed. |
 | [Expo Router](https://docs.expo.dev/router/introduction/) | React Native | File-based routing for apps that target native and web. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -489,6 +628,12 @@ Animation libraries make elements move smoothly on screen — sliding a menu in,
 | [React Spring](https://www.react-spring.dev/) | Physics-based motion for React that feels natural, not linear. |
 | [AutoAnimate](https://auto-animate.formkit.com/) | Animate list/DOM changes with one line, no config. |
 | [Anime.js](https://animejs.com/) | Lightweight animations without a framework dependency. |
+
+<details>
+<summary>Show all 12 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [Theatre.js](https://www.theatrejs.com/) | Animate with a visual timeline editor, not just code. |
 | [Lenis](https://lenis.darkroom.engineering/) | Smooth, weighted scrolling for a more polished feel. |
 | [Barba.js](https://barba.js.org/) | Smooth transitions between pages on multi-page (non-SPA) sites. |
@@ -496,6 +641,8 @@ Animation libraries make elements move smoothly on screen — sliding a menu in,
 | [View Transitions API](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API) | Native browser page/element transitions; no library to install. |
 | [Lottie](https://airbnb.io/lottie/) | Play After Effects animations exported by designers, on web or mobile. |
 | [Rive](https://rive.app/) | Interactive vector animations designers build and developers wire up. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -512,6 +659,12 @@ These tools let you draw and animate visuals beyond plain HTML — 3D scenes, ga
 | [React Three Fiber](https://r3f.docs.pmnd.rs/) | Three.js scenes written as React components. |
 | [Drei](https://github.com/pmndrs/drei) | Common helpers/shortcuts for React Three Fiber, saves boilerplate. |
 | [Threlte](https://threlte.xyz/) | Three.js for Svelte apps. |
+
+<details>
+<summary>Show all 16 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [TresJS](https://tresjs.org/) | Three.js for Vue apps. |
 | [Babylon.js](https://www.babylonjs.com/) | Alternative to Three.js with more built-in tooling and an editor. |
 | [PlayCanvas](https://playcanvas.com/) | Full game engine with a visual editor, WebGL/WebGPU. |
@@ -523,6 +676,8 @@ These tools let you draw and animate visuals beyond plain HTML — 3D scenes, ga
 | [Fabric.js](https://fabricjs.com/) | Canvas as editable objects; good for image/design editors. |
 | [Paper.js](http://paperjs.org/) | Vector graphics scripting on canvas. |
 | [Excalidraw](https://github.com/excalidraw/excalidraw) | Drop a hand-drawn-style whiteboard into a React app. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -539,6 +694,12 @@ These turn numbers and data into pictures — bar charts, line graphs, maps, flo
 | [D3](https://d3js.org/) | Full control over custom, bespoke visualizations; steeper learning curve. |
 | [Apache ECharts](https://echarts.apache.org/) | Feature-rich interactive charts out of the box. |
 | [Recharts](https://recharts.org/) | Chart components built for React apps. |
+
+<details>
+<summary>Show all 19 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [Nivo](https://nivo.rocks/) | Polished, ready-made React chart components. |
 | [visx](https://airbnb.io/visx/) | Low-level chart building blocks for React, more control than Recharts. |
 | [Unovis](https://unovis.dev/) | One charting API across React, Vue, Svelte, Angular. |
@@ -553,6 +714,8 @@ These turn numbers and data into pictures — bar charts, line graphs, maps, flo
 | [React Flow](https://reactflow.dev/) | Build node-based editors/diagrams (flowcharts, pipelines) in React. |
 | [Mermaid](https://mermaid.js.org/) | Write diagrams as text, like Markdown for flowcharts. |
 | [Cytoscape.js](https://js.cytoscape.org/) | Visualize graphs and networks of connected nodes. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -569,6 +732,12 @@ Icon sets give you ready-made small pictures — arrows, trash cans, hearts — 
 | [Tabler Icons](https://tabler.io/icons) | Huge free set (5000+) if Lucide doesn't have what you need. |
 | [Phosphor Icons](https://phosphoricons.com/) | Multiple weights (thin to bold) for varied styles. |
 | [Remix Icon](https://remixicon.com/) | Neutral style that fits most design systems. |
+
+<details>
+<summary>Show all 15 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [Iconoir](https://iconoir.com/) | Another large, free alternative icon set. |
 | [Bootstrap Icons](https://icons.getbootstrap.com/) | Matches Bootstrap-based projects. |
 | [Material Symbols](https://fonts.google.com/icons) | Google's variable icon font; fits Material Design apps. |
@@ -579,6 +748,8 @@ Icon sets give you ready-made small pictures — arrows, trash cans, hearts — 
 | [SVGL](https://svgl.app/) | Browse and copy SVG logos. |
 | [Iconify](https://iconify.design/) | Search and use icons from 200k+ across many sets, one API. |
 | [unplugin-icons](https://github.com/unplugin/unplugin-icons) | Import any Iconify icon as a component automatically, no manual copy. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -595,6 +766,12 @@ Typography tools help you pick, host, and size the text on your site — the let
 | [Bunny Fonts](https://fonts.bunny.net/) | Privacy-friendly drop-in replacement for Google Fonts. |
 | [Fontshare](https://www.fontshare.com/) | Free, quality fonts; good for a less common look. |
 | [Font Squirrel](https://www.fontsquirrel.com/) | Free fonts pre-licensed for commercial projects. |
+
+<details>
+<summary>Show all 12 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [Inter](https://rsms.me/inter/) | Popular, highly readable UI font, used almost everywhere. |
 | [Geist](https://vercel.com/font) | Vercel's modern sans/mono pairing, good dev-tool look. |
 | [JetBrains Mono](https://www.jetbrains.com/lp/mono/) | Free monospace font, good for code blocks/editors. |
@@ -602,6 +779,8 @@ Typography tools help you pick, host, and size the text on your site — the let
 | [Utopia](https://utopia.fyi/) | Calculate fluid font/spacing sizes that scale with screen width. |
 | [Capsize](https://seek-oss.github.io/capsize/) | Fix inconsistent text spacing/line-height across fonts in CSS. |
 | [Wakamai Fondue](https://wakamaifondue.com/) | Inspect what a font file actually supports before using it. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -620,9 +799,17 @@ Accessibility (a11y) tools help make sure a site works for people using screen r
 | [WCAG quick reference](https://www.w3.org/WAI/WCAG22/quickref/) | Look up the official accessibility guidelines/requirements. |
 | [The A11Y Project](https://www.a11yproject.com/) | Beginner-friendly checklist and community resources. |
 | [Inclusive Components](https://inclusive-components.design/) | Worked examples of accessible UI patterns. |
+
+<details>
+<summary>Show all 8 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [WAVE](https://wave.webaim.org/) | Visual, in-browser accessibility check, no setup. |
 | [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) | Quickly check if text/background colors pass contrast rules. |
 | [Pa11y](https://pa11y.org/) | Run accessibility checks from the command line/CI. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -639,9 +826,17 @@ A runtime is the program that actually executes your JavaScript/TypeScript outsi
 | [Deno](https://deno.com/) | Runtime with TypeScript and security built in, less config. |
 | [Bun](https://bun.sh/) | All-in-one runtime, bundler, and package manager; fast installs. |
 | [workerd](https://github.com/cloudflare/workerd) | Run Cloudflare Workers code locally or self-hosted. |
+
+<details>
+<summary>Show all 8 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [LLRT](https://github.com/awslabs/llrt) | Very fast cold starts for small serverless functions. |
 | [fnm](https://github.com/Schniz/fnm) | Fast, simple Node-only version switching. |
 | [nvm](https://github.com/nvm-sh/nvm) | The original, most widely documented Node version manager. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -658,6 +853,12 @@ A package manager installs and tracks the external code libraries your project d
 | [pnpm](https://pnpm.io/) | Faster installs, less disk space; easy upgrade once npm feels slow. |
 | [Yarn](https://yarnpkg.com/) | Alternative to npm with workspaces built in. |
 | [JSR](https://jsr.io/) | Registry built for publishing TypeScript packages directly. |
+
+<details>
+<summary>Show all 13 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [Verdaccio](https://verdaccio.org/) | Run a private npm registry inside a company/team. |
 | [Nx](https://nx.dev/) | More powerful monorepo tooling for large, complex projects. |
 | [moon](https://moonrepo.dev/) | Rust-based alternative for monorepo task running. |
@@ -666,6 +867,8 @@ A package manager installs and tracks the external code libraries your project d
 | [Changesets](https://github.com/changesets/changesets) | Track version bumps and changelogs across monorepo packages. |
 | [Renovate](https://docs.renovatebot.com/) | Automatically opens PRs to update your dependencies. |
 | [npm-check-updates](https://github.com/raineorshine/npm-check-updates) | One-off command to bump package.json versions to latest. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -684,6 +887,12 @@ A bundler takes your separate JS/CSS/asset files and combines and optimizes them
 | [esbuild](https://esbuild.github.io/) | Extremely fast bundler, often used inside other tools. |
 | [Rspack](https://rspack.rs/) | Drop-in, faster alternative to webpack. |
 | [Rsbuild](https://rsbuild.rs/) | Rspack with sensible defaults, less config than raw Rspack. |
+
+<details>
+<summary>Show all 14 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [Turbopack](https://nextjs.org/docs/app/api-reference/turbopack) | Bundler built into Next.js for faster builds. |
 | [Farm](https://www.farmfe.org/) | Rust-based alternative to Vite. |
 | [Rollup](https://rollupjs.org/) | Best suited for bundling libraries, not apps. |
@@ -693,6 +902,8 @@ A bundler takes your separate JS/CSS/asset files and combines and optimizes them
 | [tsup](https://github.com/egoist/tsup) | Bundle a TypeScript library with almost no config. |
 | [unbuild](https://github.com/unjs/unbuild) | Library build tool used across the UnJS ecosystem. |
 | [unplugin](https://unplugin.unjs.io/) | Write a build plugin once, works across Vite/Rollup/webpack/esbuild. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -709,6 +920,12 @@ A programming language is the words you type; a compiler (or transpiler) is the 
 | [tsx](https://github.com/privatenumber/tsx) | Quick-run TypeScript scripts and prototypes without a build step. |
 | [SWC](https://swc.rs/) | Faster builds under the hood; powers tools like Next.js. |
 | [Babel](https://babeljs.io/) | Support older browsers or use bleeding-edge syntax today. |
+
+<details>
+<summary>Show all 13 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [Effect](https://effect.website/) | Large TypeScript apps needing robust error handling and concurrency control. |
 | [Elm](https://elm-lang.org/) | Want a language that makes runtime crashes nearly impossible. |
 | [ReScript](https://rescript-lang.org/) | Type safety with fast compiles, a good fit for React teams. |
@@ -717,6 +934,8 @@ A programming language is the words you type; a compiler (or transpiler) is the 
 | [AssemblyScript](https://www.assemblyscript.org/) | Already know TypeScript and want an easy path to WebAssembly. |
 | [Emscripten](https://emscripten.org/) | Porting an existing C/C++ codebase or library to the web. |
 | [Pyodide](https://pyodide.org/) | Run Python and its data science libraries directly in-browser. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -733,6 +952,12 @@ A linter reads your code and flags mistakes or bad patterns before you run it, l
 | [typescript-eslint](https://typescript-eslint.io/) | Add TypeScript-aware linting rules on top of ESLint. |
 | [ESLint Stylistic](https://eslint.style/) | Keep formatting rules inside ESLint instead of a separate formatter. |
 | [Biome](https://biomejs.dev/) | Want one fast tool instead of separate linter and formatter. |
+
+<details>
+<summary>Show all 16 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [Oxc (oxlint)](https://oxc.rs/) | Speed up linting on a large codebase; complements ESLint. |
 | [dprint](https://dprint.dev/) | Need a fast, pluggable formatter outside the JS ecosystem too. |
 | [Stylelint](https://stylelint.io/) | Linting CSS specifically, catching typos and bad practices. |
@@ -744,6 +969,8 @@ A linter reads your code and flags mistakes or bad patterns before you run it, l
 | [lint-staged](https://github.com/lint-staged/lint-staged) | Only lint the files you just changed, not the whole repo. |
 | [Lefthook](https://github.com/evilmartians/lefthook) | Faster git hook manager for larger, multi-language repos. |
 | [commitlint](https://commitlint.js.org/) | Enforce a consistent format for commit messages across the team. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -762,6 +989,12 @@ Testing means running your code against expected outcomes automatically, instead
 | [Jest](https://jestjs.io/) | Older, still-common choice for React/Node projects with a big ecosystem. |
 | [Node.js test runner](https://nodejs.org/api/test.html) | Zero-dependency testing when you don't want to add a library. |
 | [Mocha](https://mochajs.org/) | Flexible test runner for legacy or highly customized setups. |
+
+<details>
+<summary>Show all 16 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [Cypress](https://www.cypress.io/) | Debugging E2E tests visually with an interactive test runner. |
 | [WebdriverIO](https://webdriver.io/) | Testing across many browsers plus real mobile devices. |
 | [Puppeteer](https://pptr.dev/) | Scripting and automating Chrome specifically, not full cross-browser testing. |
@@ -773,6 +1006,8 @@ Testing means running your code against expected outcomes automatically, instead
 | [Stryker](https://stryker-mutator.io/) | Check whether your tests actually catch bugs, not just run green. |
 | [k6](https://k6.io/) | Load-test an API to see how it handles heavy traffic. |
 | [Artillery](https://www.artillery.io/) | Load testing at larger scale with more scenario complexity. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -793,6 +1028,12 @@ A backend framework is the toolkit your server-side code runs on — it takes in
 | ⭐ [FastAPI](https://fastapi.tiangolo.com/) | Python | Modern Python APIs with automatic docs and strong typing. |
 | [Fastify](https://fastify.dev/) | JS/TS | Need more raw throughput than Express with similar simplicity. |
 | [NestJS](https://nestjs.com/) | JS/TS | Large TypeScript teams wanting Angular-style structure and conventions. |
+
+<details>
+<summary>Show all 26 tools</summary>
+
+| Name | Language | Best for |
+|---|---|---|
 | [Koa](https://koajs.com/) | JS/TS | Lighter, more flexible middleware model from the Express creators. |
 | [AdonisJS](https://adonisjs.com/) | JS/TS | Batteries-included TypeScript framework if you like Laravel's structure. |
 | [Nitro](https://nitro.build/) | JS/TS | Deploy server code almost anywhere; also powers Nuxt under the hood. |
@@ -815,6 +1056,8 @@ A backend framework is the toolkit your server-side code runs on — it takes in
 | [Ruby on Rails](https://rubyonrails.org/) | Ruby | Fast prototyping with strong conventions, a classic startup choice. |
 | [Phoenix](https://www.phoenixframework.org/) | Elixir | Real-time features like chat or live updates on the Elixir VM. |
 
+</details>
+
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
 ## APIs, RPC & realtime
@@ -832,6 +1075,12 @@ Once your frontend and backend are separate pieces, they need an agreed-upon way
 | [oRPC](https://orpc.unnoq.com/) | Want tRPC-style type safety plus auto-generated OpenAPI docs. |
 | [ts-rest](https://ts-rest.com/) | Share one typed API contract between separate client and server repos. |
 | [GraphQL](https://graphql.org/) | Clients need to fetch exactly the fields they want, nothing more. |
+
+<details>
+<summary>Show all 20 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [GraphQL Yoga](https://the-guild.dev/graphql/yoga-server) | Spin up a GraphQL server quickly with sensible defaults. |
 | [Apollo Server](https://www.apollographql.com/docs/apollo-server) | Production GraphQL server with the biggest ecosystem and tooling. |
 | [Pothos](https://pothos-graphql.dev/) | Build a GraphQL schema in code instead of writing SDL by hand. |
@@ -847,6 +1096,8 @@ Once your frontend and backend are separate pieces, they need an agreed-upon way
 | [Hoppscotch](https://hoppscotch.io/) | Free, open source alternative to Postman for testing APIs. |
 | [Bruno](https://www.usebruno.com/) | Prefer API collections stored as plain files in git. |
 | [Insomnia](https://insomnia.rest/) | One client for testing REST, GraphQL, and gRPC APIs. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -865,6 +1116,12 @@ A database stores your app's data permanently — users, posts, orders — so it
 | [Drizzle ORM](https://orm.drizzle.team/) | Type-safe queries that read like SQL, minimal magic or overhead. |
 | [MySQL](https://www.mysql.com/) | Widely-hosted relational database, common in shared or legacy hosting. |
 | [MariaDB](https://mariadb.org/) | Open source MySQL alternative with the same familiar SQL. |
+
+<details>
+<summary>Show all 23 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [SQLite](https://www.sqlite.org/) | A whole database in one file; perfect for small apps and local dev. |
 | [libSQL](https://github.com/tursodatabase/libsql) | SQLite with extra features and easy remote or edge replication. |
 | [PGlite](https://pglite.dev/) | Run real Postgres in the browser or a test suite, no server. |
@@ -884,6 +1141,8 @@ A database stores your app's data permanently — users, posts, orders — so it
 | [Typesense](https://typesense.org/) | Open source, self-hostable alternative to Algolia's search. |
 | [BullMQ](https://bullmq.io/) | Queue background jobs like emails or processing in Node, via Redis. |
 
+</details>
+
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
 ## Auth
@@ -901,6 +1160,12 @@ Auth(entication) is how your app knows who's using it — logins, sessions, pass
 | [OpenAuth](https://openauth.js.org/) | Want a standards-based, self-hosted auth server you control. |
 | [Lucia](https://lucia-auth.com/) | Learn how sessions and auth actually work by building it yourself. |
 | [Arctic](https://arcticjs.dev/) | Just need OAuth login buttons like Google or GitHub, nothing more. |
+
+<details>
+<summary>Show all 15 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [Passport.js](https://www.passportjs.org/) | Older Node.js apps already wired around its middleware pattern. |
 | [SimpleWebAuthn](https://simplewebauthn.dev/) | Add passwordless login with passkeys, fingerprint, or face unlock. |
 | [SuperTokens](https://supertokens.com/) | Self-hosted auth with prebuilt login UI, avoid vendor lock-in. |
@@ -911,6 +1176,8 @@ Auth(entication) is how your app knows who's using it — logins, sessions, pass
 | [Ory](https://www.ory.sh/) | Open source identity infrastructure for large-scale, custom setups. |
 | [CASL](https://casl.js.org/) | Fine-grained "who can do what" permission rules in your app. |
 | [OpenFGA](https://openfga.dev/) | Complex permission systems modeled like Google's internal Zanzibar. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -927,10 +1194,18 @@ Backend-as-a-service (BaaS) platforms bundle the pieces almost every app needs �
 | [PocketBase](https://pocketbase.io/) | Tiny single-file backend for small apps and side projects. |
 | [Convex](https://www.convex.dev/) | Reactive database where frontend data updates live automatically. |
 | [Nhost](https://nhost.io/) | Postgres plus GraphQL and auth in one managed platform. |
+
+<details>
+<summary>Show all 9 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [Hasura](https://hasura.io/) | Turn an existing database into a GraphQL or REST API instantly. |
 | [InstantDB](https://www.instantdb.com/) | Realtime data synced straight into your frontend state. |
 | [Parse Platform](https://parseplatform.org/) | Long-running open source backend if you want full control. |
 | [Trigger.dev](https://trigger.dev/) | Background jobs and scheduled workflows written in TypeScript. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -949,6 +1224,12 @@ Once your app works on your machine, hosting is how you put it on the internet w
 | [Docker](https://www.docker.com/) | Package an app so it runs identically everywhere; base for most hosting. |
 | [Coolify](https://coolify.io/) | Self-host your own Heroku/Netlify-style platform on any server. |
 | [Dokploy](https://dokploy.com/) | Self-hosted PaaS for deploying apps and databases together. |
+
+<details>
+<summary>Show all 15 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [CapRover](https://caprover.com/) | Simple self-hosted deployment if Docker feels like too much setup. |
 | [Kamal](https://kamal-deploy.org/) | Deploy containers straight to your own server with zero downtime. |
 | [Caddy](https://caddyserver.com/) | Web server that sets up HTTPS automatically, minimal config. |
@@ -959,6 +1240,8 @@ Once your app works on your machine, hosting is how you put it on the internet w
 | [Netlify](https://www.netlify.com/) | Easiest static/JAMstack hosting with git-based deploys (free tier). |
 | [Fly.io](https://fly.io/) | Run your app physically close to users around the world. |
 | [Render](https://render.com/) | Simple cloud hosting for apps and databases (free tier). |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -992,9 +1275,17 @@ Analytics tells you who's visiting your site and what they're clicking — footp
 | ⭐ [Uptime Kuma](https://github.com/louislam/uptime-kuma) | Want self-hosted uptime checks and status pages without paying for SaaS. |
 | [Umami](https://umami.is/) | Alternative self-hosted analytics if you want to run your own instance. |
 | [PostHog](https://posthog.com/) | Need product analytics, session replay, and feature flags in one tool. |
+
+<details>
+<summary>Show all 8 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [OpenTelemetry](https://opentelemetry.io/) | Want a vendor-neutral standard for traces, metrics, and logs across services. |
 | [Grafana](https://grafana.com/oss/grafana/) | Need customizable dashboards to visualize metrics and logs from multiple sources. |
 | [GlitchTip](https://glitchtip.com/) | Want self-hosted, Sentry-compatible error tracking without vendor lock-in. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -1011,6 +1302,12 @@ These tools let you take web skills, or a single codebase, and ship something th
 | ⭐ [PWABuilder](https://www.pwabuilder.com/) | Have a website already and want to package it as an installable app fast. |
 | [React Native](https://reactnative.dev/) | Building a mobile app in React and want the most-used framework and ecosystem. |
 | [NativeWind](https://www.nativewind.dev/) | Already write Tailwind classes and want the same syntax in React Native. |
+
+<details>
+<summary>Show all 17 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [Tamagui](https://tamagui.dev/) | Need one UI kit that renders natively on mobile and on the web. |
 | [Lynx](https://lynxjs.org/) | Curious about ByteDance's newer alternative to React Native for native UI. |
 | [NativeScript](https://nativescript.org/) | Want native mobile apps using JavaScript without a React Native rewrite. |
@@ -1023,6 +1320,8 @@ These tools let you take web skills, or a single codebase, and ship something th
 | [Wails](https://wails.io/) | Building a Go backend and want a lightweight desktop shell around it. |
 | [Neutralinojs](https://neutralino.js.org/) | Want the smallest possible desktop app wrapper, lighter than Electron. |
 | [Workbox](https://developer.chrome.com/docs/workbox) | Need offline support and caching for a PWA without hand-writing service workers. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -1039,6 +1338,12 @@ Unoptimized photos and videos are the single biggest reason pages feel slow — 
 | ⭐ [FFmpeg](https://ffmpeg.org/) | Need to record, convert, or stream audio/video — the standard CLI tool for it. |
 | [sharp](https://sharp.pixelplumbing.com/) | Resizing/converting images server-side in Node and want the fastest library. |
 | [libvips](https://www.libvips.org/) | Processing huge images or high volume and need low memory usage. |
+
+<details>
+<summary>Show all 17 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [ImageMagick](https://imagemagick.org/) | Need a battle-tested CLI for scripted, bulk image editing and conversion. |
 | [imgproxy](https://imgproxy.net/) | Want to resize images on the fly via URL params instead of pre-processing. |
 | [Unpic](https://unpic.pics/) | Building responsive `<img>` components that work across frameworks and CDNs. |
@@ -1051,6 +1356,8 @@ Unoptimized photos and videos are the single biggest reason pages feel slow — 
 | [Vidstack](https://vidstack.io/) | Building a custom video/audio player UI in a modern framework. |
 | [Plyr](https://plyr.io/) | Need a simple, accessible HTML5 player without much setup. |
 | [hls.js](https://github.com/video-dev/hls.js) | Playing HLS live/adaptive streams in browsers that don't support it natively. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -1069,6 +1376,12 @@ This category makes sure your site is fast and actually works on the browsers re
 | ⭐ [bundlephobia](https://bundlephobia.com/) | Checking how much an npm package will bloat your bundle before installing it. |
 | [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci) | Want Lighthouse scores tracked automatically on every commit or PR. |
 | [Unlighthouse](https://unlighthouse.dev/) | Need to Lighthouse-scan an entire site at once, not one page. |
+
+<details>
+<summary>Show all 16 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [PageSpeed Insights](https://pagespeed.web.dev/) | Want Google's lab and real-world field data for a public URL. |
 | [WebPageTest](https://www.webpagetest.org/) | Need a deep, real-browser performance trace with waterfall charts. |
 | [sitespeed.io](https://www.sitespeed.io/) | Want open source, self-hosted continuous performance monitoring. |
@@ -1080,6 +1393,8 @@ This category makes sure your site is fast and actually works on the browsers re
 | [pkg-size](https://pkg-size.dev/) | Checking an npm package's install size, not just its bundle size. |
 | [rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer) | Seeing what's bloating a Vite or Rollup bundle, visually. |
 | [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer) | Seeing what's bloating a webpack bundle, visually. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -1096,6 +1411,12 @@ Before real data or a finished backend exists, you still need something to fill 
 | ⭐ [JSONPlaceholder](https://jsonplaceholder.typicode.com/) | Want a free hosted fake REST API to test frontend code against instantly. |
 | [placehold.co](https://placehold.co/) | Need a placeholder image at an exact custom size and color. |
 | [Unsplash](https://unsplash.com/) | Need real free high-resolution photos instead of generic mock images. |
+
+<details>
+<summary>Show all 12 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [Pexels](https://www.pexels.com/) | Need free stock photos or videos for a demo or mockup. |
 | [unDraw](https://undraw.co/) | Want free customizable illustrations instead of photos for empty states. |
 | [DiceBear](https://www.dicebear.com/) | Need quick generated avatars for user profiles in a demo. |
@@ -1103,6 +1424,8 @@ Before real data or a finished backend exists, you still need something to fill 
 | [Random User](https://randomuser.me/) | Need randomly generated user profile data via an API call. |
 | [json-server](https://github.com/typicode/json-server) | Want a full fake REST API you control from a local JSON file. |
 | [Mockoon](https://mockoon.com/) | Prefer a desktop GUI to design and run mock APIs, no code. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -1119,9 +1442,17 @@ This is about the small metadata details that decide whether your site looks pol
 | ⭐ [Google Search Console](https://search.google.com/search-console) | Want to see how Google actually indexes and ranks your site, for free. |
 | [favicon.io](https://favicon.io/) | Making a quick favicon from text, an emoji, or an image. |
 | [Maskable.app](https://maskable.app/) | Checking a PWA icon won't get cropped weird on Android. |
+
+<details>
+<summary>Show all 8 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [Open Graph protocol](https://ogp.me/) | Learning the tags behind rich link previews — the spec itself. |
 | [Satori](https://github.com/vercel/satori) | Generating share-image (OG image) SVGs/PNGs dynamically from HTML/CSS. |
 | [Schema.org](https://schema.org/) | Looking up the structured-data vocabulary search engines actually understand. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
@@ -1138,6 +1469,12 @@ Sometimes the fastest way to find a tool isn't a search engine, it's a hand-cura
 | [Awesome Vue](https://github.com/vuejs/awesome-vue) | Looking for curated Vue ecosystem resources in one place. |
 | [Awesome Svelte](https://github.com/TheComputerM/awesome-svelte) | Looking for curated Svelte ecosystem resources in one place. |
 | [Awesome Angular](https://github.com/PatrickJS/awesome-angular) | Looking for curated Angular ecosystem resources in one place. |
+
+<details>
+<summary>Show all 13 tools</summary>
+
+| Name | Best for |
+|---|---|
 | [Awesome Node.js](https://github.com/sindresorhus/awesome-nodejs) | Looking for curated Node.js packages and resources in one place. |
 | [Awesome TypeScript](https://github.com/dzharii/awesome-typescript) | Looking for curated TypeScript resources and tooling in one place. |
 | [Awesome CSS](https://github.com/awesome-css-group/awesome-css) | Looking for curated CSS frameworks, tools, and learning resources. |
@@ -1146,6 +1483,8 @@ Sometimes the fastest way to find a tool isn't a search engine, it's a hand-cura
 | [Awesome Self-Hosted](https://github.com/awesome-selfhosted/awesome-selfhosted) | Want free software you can run yourself instead of paying for SaaS. |
 | [Public APIs](https://github.com/public-apis/public-apis) | Need a free public API to build a project or demo against. |
 | [free-for.dev](https://free-for.dev/) | Looking for SaaS tools and cloud services with usable free tiers. |
+
+</details>
 
 <p align="right"><a href="#table-of-contents"><b>↥ Back to top</b></a></p>
 
