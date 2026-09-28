@@ -1066,6 +1066,8 @@ Once your frontend and backend are separate pieces, they need an agreed-upon way
 
 > Concepts behind this: [dev-knowledge → Backend & APIs](https://github.com/alwintwk/dev-knowledge#backend--apis)
 
+> Deep dive: [dev-knowledge → API styles](https://github.com/alwintwk/dev-knowledge/blob/main/topics/api-styles.md) (REST, GraphQL, gRPC, WebSocket, webhooks, and how to pick)
+
 **Start here:** Type-safe APIs: tRPC (if both ends are TypeScript). Realtime: Socket.IO — the easiest way to add live updates.
 
 | Name | Best for |
@@ -1106,6 +1108,8 @@ Once your frontend and backend are separate pieces, they need an agreed-upon way
 A database stores your app's data permanently — users, posts, orders — so it survives a server restart. An ORM (object-relational mapper) lets you query that database using your programming language's normal objects and functions instead of writing raw SQL by hand. This section also covers search engines for fast text lookup and in-memory stores for caching repeated reads.
 
 > Concepts behind this: [dev-knowledge → Databases](https://github.com/alwintwk/dev-knowledge#databases)
+
+> Deep dive: [dev-knowledge → Databases](https://github.com/alwintwk/dev-knowledge/blob/main/topics/databases.md) (families, indexes, transactions, schema design)
 
 **Start here:** Database: PostgreSQL — the reliable default for almost any project. ORM: Prisma — the gentlest first ORM, with great docs (move to Drizzle once you know some SQL).
 
@@ -1150,6 +1154,8 @@ A database stores your app's data permanently — users, posts, orders — so it
 Auth(entication) is how your app knows who's using it — logins, sessions, passwords, social sign-in — and authorization is what they're allowed to do once inside. Rolling this yourself is a common source of security bugs, so most apps lean on a library or hosted service instead of writing it from scratch.
 
 > Concepts behind this: [dev-knowledge → Auth & identity (SSO, OAuth, JWT)](https://github.com/alwintwk/dev-knowledge#auth--identity)
+
+> Deep dive: [dev-knowledge → Authentication and authorization](https://github.com/alwintwk/dev-knowledge/blob/main/topics/auth.md) (sessions vs JWT, OAuth, passkeys, RBAC)
 
 **Start here:** Better Auth — modern, framework-agnostic TypeScript auth library with an active community.
 
