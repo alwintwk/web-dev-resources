@@ -314,6 +314,8 @@ A meta-framework wraps a UI framework (like React or Vue) with the extra plumbin
 
 > Concepts behind this: [dev-knowledge → CSR vs SSR vs SSG](https://github.com/alwintwk/dev-knowledge#csr-vs-ssr-vs-ssg)
 
+> Deep dive: [dev-knowledge → Rendering strategies](https://github.com/alwintwk/dev-knowledge/blob/main/topics/rendering.md) (CSR, SSR, SSG, ISR, streaming, islands, server components)
+
 **Start here:** React: Next.js. Vue: Nuxt. Svelte: SvelteKit.
 
 | Name | Works with | Best for |
@@ -980,6 +982,8 @@ Testing means running your code against expected outcomes automatically, instead
 
 > Concepts behind this: [dev-knowledge → Testing](https://github.com/alwintwk/dev-knowledge#testing)
 
+> Deep dive: [dev-knowledge → Testing](https://github.com/alwintwk/dev-knowledge/blob/main/topics/testing.md) (test types, test doubles, TDD, flaky tests, coverage)
+
 **Start here:** Vitest for unit tests, Playwright for end-to-end — both are fast, modern defaults with great docs.
 
 | Name | Best for |
@@ -1220,6 +1224,8 @@ Backend-as-a-service (BaaS) platforms bundle the pieces almost every app needs �
 Once your app works on your machine, hosting is how you put it on the internet where others can use it. Deployment is the process of getting your code from your machine onto that server, ideally automatically every time you push. Options range from one-click platforms that hide the servers entirely to self-hosting with tools like Docker, a way to package an app so it runs the same everywhere.
 
 > Concepts behind this: [dev-knowledge → DevOps & cloud](https://github.com/alwintwk/dev-knowledge#devops--cloud)
+
+> Deep dive: [dev-knowledge → Deployment strategies](https://github.com/alwintwk/dev-knowledge/blob/main/topics/deployment.md) (rolling, blue-green, canary, feature flags, rollbacks)
 
 **Start here:** Static/frontend sites: Vercel. Full app with a backend/database: Railway — both are near-instant to deploy to.
 
