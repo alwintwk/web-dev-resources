@@ -736,7 +736,7 @@ Icon sets give you ready-made small pictures — arrows, trash cans, hearts — 
 | [Remix Icon](https://remixicon.com/) | Neutral style that fits most design systems. |
 
 <details>
-<summary>Show all 15 tools</summary>
+<summary>Show all 16 tools</summary>
 
 | Name | Best for |
 |---|---|
@@ -747,6 +747,7 @@ Icon sets give you ready-made small pictures — arrows, trash cans, hearts — 
 | [Feather](https://feathericons.com/) | Simple, minimal icon style. |
 | [Font Awesome](https://fontawesome.com/) | Very popular, huge community; free tier covers most needs. |
 | [Simple Icons](https://simpleicons.org/) | Brand/company logos as SVG (GitHub, Twitter, etc.). |
+| [Svg/icons CLI](https://github.com/svgicons-com/cli) | Search icon families and inspect licence metadata; raw SVG retrieval requires Pro access. |
 | [SVGL](https://svgl.app/) | Browse and copy SVG logos. |
 | [Iconify](https://iconify.design/) | Search and use icons from 200k+ across many sets, one API. |
 | [unplugin-icons](https://github.com/unplugin/unplugin-icons) | Import any Iconify icon as a component automatically, no manual copy. |
