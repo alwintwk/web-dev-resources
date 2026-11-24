@@ -51,6 +51,8 @@ A meta-framework wraps a UI framework and adds routing (URLs to pages), server r
 
 See all options: [Meta-frameworks](#meta-frameworks).
 
+[Astro SSR and Fastify playground](https://github.com/WebDecoy/node/tree/dfb8b01c28794df0a73c38e7b5d6b10b6a2bd8ea/playgrounds/astro-fastify) — Best for testing which prerendered and on-demand requests reach a Node origin.
+
 ### Tailwind vs plain CSS / CSS Modules vs a component library
 
 This is really a choice about how much styling you write yourself versus reuse.
