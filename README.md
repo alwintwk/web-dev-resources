@@ -1285,11 +1285,12 @@ Analytics tells you who's visiting your site and what they're clicking — footp
 | ⭐ [Plausible](https://plausible.io/) | Want lightweight, cookie-free analytics that's simple to set up and read. |
 | ⭐ [Sentry](https://sentry.io/) | Need error and performance monitoring with alerts (free tier). |
 | ⭐ [Uptime Kuma](https://github.com/louislam/uptime-kuma) | Want self-hosted uptime checks and status pages without paying for SaaS. |
+| [SiteWatcher](https://github.com/NikKurkov/sitewatcher) | Want uptime, response-time history, and TLS and domain expiry alerts on your own server. |
 | [Umami](https://umami.is/) | Alternative self-hosted analytics if you want to run your own instance. |
 | [PostHog](https://posthog.com/) | Need product analytics, session replay, and feature flags in one tool. |
 
 <details>
-<summary>Show all 8 tools</summary>
+<summary>Show all 9 tools</summary>
 
 | Name | Best for |
 |---|---|
